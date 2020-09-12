@@ -15,10 +15,11 @@ print("***WELCOME TO ROCK PAPER SCISSORS SHOWDOWN***")
 choices = ["rock", "paper", "scissors"]
 
 player_choice = input("Choose rock, paper, scissors: \n")
-print(f"Player Choice: {player_choice}")
 
 while player_choice not in choices:
+    print(ff"Player Choice: {player_choice}")
     player_choice = input("Not Valid, Please choose rock, paper, scissors: \n")
 print(f"Player Choice: {player_choice}")
     
-    
+comp_choice = random.choice(choices)
+print(f"Computur Choice: {comp_choice}")
