@@ -17,9 +17,19 @@ choices = ["rock", "paper", "scissors"]
 player_choice = input("Choose rock, paper, scissors: \n")
 
 while player_choice not in choices:
-    print(ff"Player Choice: {player_choice}")
+    print(f"Player Choice: {player_choice}")
     player_choice = input("Not Valid, Please choose rock, paper, scissors: \n")
 print(f"Player Choice: {player_choice}")
     
 comp_choice = random.choice(choices)
-print(f"Computur Choice: {comp_choice}")
+print(f"Computer Choice: {comp_choice}")
+
+
+if player_choice == comp_choice:
+    print("**********Tie!***********")
+else:
+    if player_choice == "rock":
+        if comp_choice == "paper":
+            print("Computer Wins!")
+        else:
+            print ("Player Wins!")
