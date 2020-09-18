@@ -36,10 +36,10 @@ else:
     elif player_choice == "paper":
         if comp_choice == "scissors":
             print("*********Computer Wins!*********")
-    else:
+        else:
             print("*********Player Wins!**********")
-else:
+    else:
         if comp_choice == "rock":
-            print("********Computer Wins!*********"")
+            print("********Computer Wins!*********")
         else:
             print("********Player Wins!********")
